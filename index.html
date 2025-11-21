@@ -6,7 +6,30 @@
     <title>hello world</title>
 </head>
 <body>
-   
-    <script>js.js</script>
+     <h1>Welcome to my home page</h1>
+     <h3>name <input type="text" id="box"></h3>
+     <button id="btn">Print</button>
+    <style>
+        h1{
+            text-align: center;
+            background-color: yellow;
+            color: red;
+
+        }
+             @keyframes identifier {
+                from{color:red;}
+                to{color:blue;}
+
+            }
+    </style>
+    <script>
+        var word = document.getElementById("box")
+        var print= document.getElementById("btn")
+         function printname() {
+            document.body.innerHTML += "<p>" + word.value + "</p>";
+            console.log(word.value);
+        }
+         print.addEventListener("click", printname);
+    </script>
 </body>
 </html
